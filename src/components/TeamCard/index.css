@@ -1,0 +1,12 @@
+.container-card {
+  display: flex;
+  padding: 10px;
+  border: 4px;
+  background-color: transparent;
+}
+.team-logo {
+  width: 200px;
+}
+.team-head {
+  color: #fff;
+}
