@@ -25,7 +25,7 @@ class TeamMatches extends Component {
     const {params} = match
 
     const {id} = params
-    const response = await fetch(`https://apis.ccbp.in/ipl/${id}`)
+    const response = await fetch(`https://apis.ccbp.in/ipl/team-matches/${id}`)
 
     const data = await response.json()
 
@@ -36,8 +36,8 @@ class TeamMatches extends Component {
     return (
       <Link to="/team-matches">
         <div className="blog-list-container">
-          {/* <img src={teamImageUrl} alt={name} className="team-img" />
-          <h1>{name}</h1> */}
+          <img src=" aa" alt="name" className="team-img" />
+          <h1>name</h1>
           <h1>hello</h1>
         </div>
       </Link>

@@ -18,14 +18,12 @@ class Home extends Component {
 
     const data = await response.json()
 
-    console.log(data)
-    const updatedData = data.map(item => ({
-      id: item.team.id,
-      name: item.team.name,
-      teamImageUrl: item.team.team_image_url,
+    const updatedData = data.teams.map(eachItem => ({
+      id: eachItem.id,
+      name: eachItem.name,
+      teamImageUrl: eachItem.image_url,
     }))
-    console.log(updatedData)
-    // this.setState({teamsData: updatedData})
+    this.setState({teamsData: updatedData})
   }
 
   render() {
@@ -43,11 +41,13 @@ class Home extends Component {
         </div>
         <div className="menu-section">
           <ul className="ipl-menu">
+            {/* <Link to="/"> */}
             <li>
               {teamsData.map(item => (
                 <TeamCard teamData={item} key={item.id} />
               ))}
             </li>
+            {/* </Link> */}
           </ul>
         </div>
       </div>
