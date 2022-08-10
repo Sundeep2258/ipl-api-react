@@ -1,4 +1,3 @@
-// import {Link} from 'react-router-dom'
 import {Component} from 'react'
 import TeamCard from '../TeamCard'
 import './index.css'
@@ -41,13 +40,11 @@ class Home extends Component {
         </div>
         <div className="menu-section">
           <ul className="ipl-menu">
-            {/* <Link to="/"> */}
             <li>
               {teamsData.map(item => (
                 <TeamCard teamData={item} key={item.id} />
               ))}
             </li>
-            {/* </Link> */}
           </ul>
         </div>
       </div>

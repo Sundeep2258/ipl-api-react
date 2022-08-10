@@ -25,7 +25,7 @@ class TeamMatches extends Component {
     const {params} = match
 
     const {id} = params
-    const response = await fetch(`https://apis.ccbp.in/ipl/team-matches/${id}`)
+    const response = await fetch(`https://apis.ccbp.in/ipl/${id}`)
 
     const data = await response.json()
 

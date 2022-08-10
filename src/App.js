@@ -12,7 +12,6 @@ const App = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
-      {/* <Route exact path="/" component={TeamCard} /> */}
       <Route exact path="/team-matches" component={TeamMatches} />
       <Route component={NotFound} />
     </Switch>
